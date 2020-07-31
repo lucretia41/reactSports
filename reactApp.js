@@ -1,4 +1,4 @@
-//thanks to davey strus, tho i dud get most solved on my own, used his css mostly
+//thanks to davey struss, tho i did get most solved on my own, used his css mostly
 
 
 
@@ -15,7 +15,7 @@ class Team extends React.Component {
         this.shotSound = new Audio("./assets/audio/CAR-Door.mp3")
         this.scoreSound = new Audio("./assets/audio/Swish.mp3")
     }
-
+// thanks to davey struss for the timeout, helps with sound transition
     shotHandler = () => {
         let score = this.state.score
         this.shotSound.play()
@@ -33,7 +33,7 @@ class Team extends React.Component {
             score
         }))
     }
-
+// thnaks to davey struss, my precentage works right now
     render() {
         let shotPercentageDiv
         if (this.state.shots) {
@@ -45,7 +45,7 @@ class Team extends React.Component {
                 </div>
             )
         }
-
+//thanks again to davey, i  would have used a different class name for identity
         return (
             <div className="Team">
                 <h2>{this.props.name}</h2>
@@ -70,7 +70,7 @@ class Team extends React.Component {
         )
     }
 }
-
+//worked this out but chnaged to match davey css
 function Game(props) {
     return (
 
@@ -98,7 +98,7 @@ function Game(props) {
 
 
 
-
+// this section was my coding which im glad i figured out without help but since i used davey's css matched it up
 
 function App(props) {
 
