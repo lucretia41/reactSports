@@ -1,3 +1,8 @@
+//thanks to davey strus, tho i dud get most solved on my own, used his css mostly
+
+
+
+
 class Team extends React.Component {
     constructor(props) {
         super(props)
